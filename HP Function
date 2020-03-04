@@ -1,0 +1,13 @@
+from random import randint
+
+#Return hit points for each monster
+def Hps (num_dice, num_sides, base):
+    dice = num_dice
+    sides = num_sides
+    total = 0
+    for i in range(dice):
+        num = randint(0, sides)
+        total += num
+    total += base
+        
+    return(total)
